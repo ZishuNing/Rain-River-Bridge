@@ -46,23 +46,23 @@
       var div = document.createElement('div');
       div.innerHTML = msg;
       warningBanner.appendChild(div);
-      if (type == 'error') div.style = 'background: red; padding: 10px;';
-      else {
-        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-        setTimeout(function () {
-          warningBanner.removeChild(div);
-          updateBannerVisibility();
-        }, 5000);
-      }
+      // if (type == 'error') div.style = 'background: red; padding: 10px;';
+      // else {
+      //   if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+      //   setTimeout(function () {
+      //     warningBanner.removeChild(div);
+      //     updateBannerVisibility();
+      //   }, 5000);
+      // }
       updateBannerVisibility();
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/Rain, River, Bridge.loader.js";
+    var loaderUrl = buildUrl + "/Rain.loader.js";
     var config = {
-      dataUrl: buildUrl + "/Rain, River, Bridge.data",
-      frameworkUrl: buildUrl + "/Rain, River, Bridge.framework.js",
-      codeUrl: buildUrl + "/Rain, River, Bridge.wasm",
+      dataUrl: buildUrl + "/Rain.data",
+      frameworkUrl: buildUrl + "/Rain.framework.js",
+      codeUrl: buildUrl + "/Rain.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "Rain, Rivier, Bridge",
@@ -96,7 +96,7 @@
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
       canvas.style.width = "100%";
-      canvas.style.height = "100&";
+      canvas.style.height = "100%";
     }
 
     loadingBar.style.display = "block";
