@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Rain, Rivier, Bridge</title>
-  <!-- <link rel="shortcut icon" href="TemplateData/favicon.ico"> -->
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
 </head>
 
@@ -13,14 +13,14 @@
   <div id="unity-container" style="width: 100%; height: 100%;">
     <canvas id="unity-canvas" width=auto height=auto"></canvas>
     <div id="unity-loading-bar">
-      <!-- <div id="unity-logo"></div> -->
+      <div id="unity-logo"></div>
       <div id="unity-progress-bar-empty">
         <div id="unity-progress-bar-full"></div>
       </div>
     </div>
     <div id="unity-warning"> </div>
     <div id="unity-footer">
-      <!-- <div id="unity-webgl-logo"></div> -->
+      <div id="unity-webgl-logo"></div>
       <div id="unity-fullscreen-button"></div>
       <div id="unity-build-title">Rain, Rivier, Bridge</div>
     </div>
@@ -46,14 +46,14 @@
       var div = document.createElement('div');
       div.innerHTML = msg;
       warningBanner.appendChild(div);
-      // if (type == 'error') div.style = 'background: red; padding: 10px;';
-      // else {
-      //   if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-      //   setTimeout(function () {
-      //     warningBanner.removeChild(div);
-      //     updateBannerVisibility();
-      //   }, 5000);
-      // }
+      if (type == 'error') div.style = 'background: red; padding: 10px;';
+      else {
+        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+        setTimeout(function () {
+          warningBanner.removeChild(div);
+          updateBannerVisibility();
+        }, 5000);
+      }
       updateBannerVisibility();
     }
 
